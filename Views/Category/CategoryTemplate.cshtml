@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Kategoria";
+}
+@model IEnumerable<CD>
+
+<!-- model CD
+        public int ID { get; set; }
+        public string Title { get; set; }
+        public double Price { get; set; }
+        public int Lenght { get; set; }
+        public string Direction { get; set; }
+        public string Scenario { get; set; }
+        public string Type { get; set; }
+        public string Production { get; set; }
+        public string Premiere { get; set; }
+-->
+
+<div class='movies-container clearfix'>
+@foreach (var film in Model)
+{
+    <div class='film-frame'>
+        <div class='zdjecie'><img src="@film.Picture"></img></div>
+        <h4>@film.Title</h4>
+        <p>@film.Lenght minut</p>
+        <p class='info-label'>Reżyseria:</p>
+        <p class='italic'>@film.Direction</p>
+        <p class='info-label'>Scenariusz:</p>
+        <p class='italic'>@film.Scenario</p>
+        <p>@film.Production</p>
+        <p>@film.Premiere</p>
+        <div class='move-to-bottom'>
+            <p class='bigger'>@film.Price zł</p>
+            <a class="btn btn-success" asp-controller="Basket" asp-action="AddFilmToBasket" asp-route-filmID= "@film.ID" >Dodaj do koszyka</a>
+        </div>
+    </div>   
+}
+</div>

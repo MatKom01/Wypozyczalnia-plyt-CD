@@ -1,0 +1,66 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+.film-frame {
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 30px;
+    min-height: 760px;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+    float: left;
+    /*background-color: lightsteelblue;*/
+    text-align: center;
+    position: relative;
+}
+
+.movies-container {
+    max-width: 1600px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.zdjecie {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.zdjecie img {
+    width: 80%;
+}
+
+.film-frame p {
+    margin: 0 0 8px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.film-frame h4 {
+    padding: 10px 0 10px 0;
+}
+
+.film-frame .info-label {
+    font-weight: 400;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.film-frame .bigger {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.move-to-bottom {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+}
